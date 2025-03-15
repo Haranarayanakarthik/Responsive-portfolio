@@ -186,6 +186,77 @@ span
     font-size: 1.6rem;
     margin:2rem 0 3rem;
 }
+
+/* Skills Section */
+#u2 {
+    text-align: center;
+    padding: 50px 30px;
+    background-color: var(--second-bg-color); /* Dark theme */
+}
+
+#u2 h2 {
+    font-size: 4rem;
+    font-weight: bold;
+    color:var(--text-color);
+    margin-bottom: 20px;
+}
+
+/* Skills Container */
+.skills-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px; /* Increased gap between rows */
+}
+
+/* Row Styling */
+.skills-container div {
+    display: flex;
+    justify-content: center;
+    gap: 50px; /* Increased gap between skill boxes */
+}
+
+/* Skill Cards */
+.skills-container img {
+    width: 120px;  
+    height: 120px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 2px solid rgba(168, 85, 247, 0.7);
+    border-radius: 10px;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+/* Hover Effect */
+.skills-container img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 15px rgba(168, 85, 247, 0.8);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .skills-container div {
+        flex-wrap: wrap;
+        gap: 30px; /* Adjusted for responsiveness */
+    }
+    .skills-container img {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+@media (max-width: 480px) {
+    .skills-container div {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px; /* Adjusted for mobile */
+    }
+    .skills-container img {
+        width: 90px;
+        height: 90px;
+    }
+}
 .portfolio{
     background: var(--bg-color);
 }
