@@ -1,5 +1,3 @@
-// This is used to make it responsive
-
 let menuIcon = document.querySelector("#menu-icon");
 let navbar = document.querySelector(".navbar");
 
